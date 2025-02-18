@@ -9,6 +9,7 @@ VROPS_PASSWORD="" # vRealize Operations Password
 ################################################################
 
 apt install -y jq
+# wget https://dl.influxdata.com/telegraf/releases/telegraf_$TELEGRAF_VERSION.deb -O /tmp/telegraf.deb
 wget https://dl.influxdata.com/telegraf/releases/telegraf_$TELEGRAF_VERSION.deb -O /tmp/telegraf.deb
 dpkg -i /tmp/telegraf.deb
 wget --no-check-certificate https://$VROCP_HOSTNAME/downloads/salt/open_source_telegraf_monitor.sh -O /tmp/telegraf.sh

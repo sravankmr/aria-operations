@@ -59,6 +59,7 @@ $certCallback = @"
 
 # get initial setup file from vrealize operations cloud proxy ##
 wget "https://$vrocpHostname/downloads/salt/open_source_telegraf_monitor.ps1" -UseBasicParsing -OutFile initial_setup.ps1
+# wget "https://$vrocpHostname/downloads/salt/open_source_telegraf_monitor.ps1" -UseBasicParsing -OutFile initial_setup.ps1
 
 # get vrealize opeartions token ################################
 $headers = @{}
